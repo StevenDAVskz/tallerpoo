@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Empleo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Header dentro del contenedor -->
+        <header>
+            <img src="img/Logo-Unicolombo.png" alt="Logo" class="logo">
+            <h1>Registro de Empleo</h1>
+        </header>
+
+        <!-- Formulario -->
+        <div class="form-container">
+            <form>
+                <!-- Datos Personales -->
+                <div class="section-title">
+                    <h2>Datos Personales</h2>
+                </div>
+                <hr class="divider">
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="tipo-documento">Tipo de Documento:</label>
+                        <select id="tipo-documento">
+                            <option value="">Selecciona un documento</option>
+                            <option value="cc">Cédula de Ciudadanía</option>
+                            <option value="nit">NIT</option>
+                            <option value="ce">Cédula de Extranjería</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="numero-documento">Número de Documento:</label>
+                        <input type="text" id="numero-documento" placeholder="">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="primer-nombre">Primer Nombre:</label>
+                        <input type="text" id="primer-nombre" placeholder="">
+                    </div>
+                    <div class="form-field">
+                        <label for="segundo-nombre">Segundo Nombre:</label>
+                        <input type="text" id="segundo-nombre" placeholder="">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="primer-apellido">Primer Apellido:</label>
+                        <input type="text" id="primer-apellido" placeholder="">
+                    </div>
+                    <div class="form-field">
+                        <label for="segundo-apellido">Segundo Apellido:</label>
+                        <input type="text" id="segundo-apellido" placeholder="">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="text" id="telefono" placeholder="">
+                    </div>
+                    <div class="form-field">
+                        <label for="celular">Celular:</label>
+                        <input type="text" id="celular" placeholder="">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="">
+                    </div>
+                    <div class="form-field">
+                        <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" id="fecha-nacimiento" placeholder="">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="genero">Género:</label>
+                        <select id="genero">
+                            <option value="">Selecciona un género</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="municipio-residencia">Municipio de Residencia:</label>
+                        <select id="municipio-residencia">
+                            <option value="">Selecciona un municipio</option>
+                            <!-- Agregar municipios -->
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="departamento-residencia">Departamento de Residencia:</label>
+                        <select id="departamento-residencia">
+                            <option value="">Selecciona un departamento</option>
+                            <!-- Agregar departamentos -->
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" id="direccion" placeholder="">
+                    </div>
+                </div>
+
+                <!-- Datos Laborales -->
+                <div class="section-title">
+                    <h2>Datos Laborales</h2>
+                </div>
+                <hr class="divider">
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="empresa">Seleccionar Empresa:</label>
+                        <select id="empresa">
+                            <option value="">Selecciona una empresa</option>
+                            <!-- Agregar empresas -->
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="cargo">Cargo:</label>
+                        <input type="text" id="cargo" placeholder="">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="dependencia">Dependencia:</label>
+                        <input type="text" id="dependencia" placeholder="">
+                    </div>
+                    <div class="form-field">
+                        <label for="estado">Estado:</label>
+                        <input type="text" id="estado" placeholder="">
+                    </div>
+                </div>
+
+                <!-- Botón centrado -->
+                <div class="form-row button-row">
+                    <button type="button" class="submit-btn">Registrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

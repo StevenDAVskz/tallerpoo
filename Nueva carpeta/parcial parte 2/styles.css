@@ -1,0 +1,122 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Contenedor principal */
+.main-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ccc; /* Borde exterior del recuadro */
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc; /* Borde inferior para separar del formulario */
+}
+
+header .logo {
+    width: 80px; /* Aumento del tamaño del logo */
+    height: 80px;
+    object-fit: contain;
+}
+
+/* Título */
+header h1 {
+    font-size: 26px; /* Aumento del tamaño del título */
+    color: #333;
+    margin: 0;
+}
+
+
+/* Contenedor del formulario */
+.form-container {
+    margin-top: 20px;
+}
+
+/* Subtítulos de secciones */
+.section-title {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.section-title h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Línea divisoria */
+hr.divider {
+    border: 0;
+    border-top: 1px solid black;
+    margin: 10px 0;
+}
+
+/* Filas del formulario (esto se encargará de las dos columnas) */
+.form-row {
+    display: flex;
+    gap: 20px; /* Espaciado entre columnas */
+    margin-bottom: 15px; /* Más espacio entre filas */
+}
+
+/* Cada campo dentro de una fila */
+.form-field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo de los labels */
+label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px; /* Más espacio entre label y campo */
+}
+
+/* Estilo para los inputs y selects */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    padding: 12px; /* Campos más grandes */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white; /* Fondo blanco */
+    color: #333; /* Color del texto */
+    width: 100%; /* Ocupa todo el espacio disponible */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+}
+
+/* Botón centrado */
+.button-row {
+    justify-content: center;
+}
+
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}

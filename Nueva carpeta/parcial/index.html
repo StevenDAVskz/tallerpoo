@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Programa Académico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Header dentro del contenedor -->
+        <header>
+            <img src="img/Logo-Unicolombo.png" alt="Logo" class="logo">
+            <h1>Registro de Programa Académico</h1>
+        </header>
+        
+        <!-- Formulario -->
+        <div class="form-container">
+            <form>
+                <!-- Primera fila -->
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="campo1">Nombre del programa:</label>
+                        <input type="text" id="campo1" placeholder="">
+                    </div>
+                    <div class="form-field">
+                        <label for="campo2">Nombre Abreviado:</label>
+                        <input type="text" id="campo2" placeholder="">
+                    </div>
+                </div>
+
+                <!-- Fila con el campo de código institucional junto con nivel de formación -->
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="codigo-institucional">Código Institucional:</label>
+                        <input type="text" id="codigo-institucional" placeholder="">
+                    </div>
+                    <div class="form-field">
+                        <label for="nivel-formacion">Nivel de Formación:</label>
+                        <select id="nivel-formacion">
+                            <option value="">Selecciona una opción</option>
+                            <option value="pregrado">Pregrado</option>
+                            <option value="posgrado">Posgrado</option>
+                            <option value="doctorado">Doctorado</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="estado">Estado:</label>
+                        <select id="estado">
+                            <option value="">Selecciona un estado</option>
+                            <option value="activo">Activo</option>
+                            <option value="inactivo">Inactivo</option>
+                            <option value="finalizado">Finalizado</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="coordinador-academico">Coordinador Académico:</label>
+                        <select id="coordinador-academico">
+                            <option value="">Selecciona un coordinador</option>
+                            <option value="juan">Juan Pérez</option>
+                            <option value="maria">María González</option>
+                            <option value="luis">Luis Martínez</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Tercera fila -->
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="campo5">Programa académico:</label>
+                        <input type="text" id="campo5" placeholder="">
+                    </div>
+                    <div class="form-field">
+                        <label for="campo6">SNIES:</label>
+                        <input type="text" id="campo6" placeholder="">
+                    </div>
+                </div>
+
+                <!-- Texto con checkbox -->
+                <div class="form-row">
+                    <label>
+                        <input type="checkbox">
+                        REALIZAR PRÁCTICAS
+                    </label>
+                </div>
+
+                <!-- Duración y meses -->
+                <!-- Fila de duración -->
+                <div class="form-row duration-row">
+                    <label for="duracion">Duración:</label>
+                    <input type="number" id="duracion" placeholder="0" min="0">
+                    <span>meses</span>
+                </div>
+
+                <!-- Botón centrado -->
+                <div class="form-row button-row">
+                    <button type="button" class="submit-btn">Agregar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
